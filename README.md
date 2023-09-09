@@ -1,4 +1,4 @@
-# Name Project
+# Test CPS
 
 ## Use of [Vite](https://vitejs.dev/), [Sass](https://sass-lang.com/).
 

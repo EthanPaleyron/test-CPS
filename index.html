@@ -6,12 +6,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/2621df78fc.js" crossorigin="anonymous"></script>
-  <title>Name</title>
+  <title>Test CPS</title>
 </head>
 
 <body>
 
-  <h1>Hello World</h1>
+  <h1>Test CPS</h1>
+
+  <button id="testCPS">0</button>
+
+  <h2>The previous part => <span id="previousPart">0</span></h2>
+  <h2>Your best score => <span id="bestScore">0</span></h2>
+
+  <label for="optionTime">Options time:</label>
+  <select name="time" id="optionTime">
+    <option value="60">60s</option>
+    <option value="30">30s</option>
+    <option selected value="10">10s</option>
+    <option value="1">1s</option>
+  </select>
+  <h2 class="time"><span id="sec">00</span>s : <span id="ms">99</span>ms</h2>
+  <button id="restart">Restart</button>
 
   <script type="module" src="/js/main.js"></script>
 </body>
