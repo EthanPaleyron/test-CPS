@@ -11,22 +11,41 @@
 
 <body>
 
-  <h1>Test CPS</h1>
+  <div id="blurring">
+    <h1>Test CPS</h1>
 
-  <button id="testCPS">0</button>
+    <section class="scores">
+      <h2>🏆 <span id="bestScore"></span></h2>
+    </section>
 
-  <h2>The previous part => <span id="previousPart">0</span></h2>
-  <h2>Your best score => <span id="bestScore">0</span></h2>
 
-  <label for="optionTime">Options time:</label>
-  <select name="time" id="optionTime">
-    <option value="60">60s</option>
-    <option value="30">30s</option>
-    <option selected value="10">10s</option>
-    <option value="1">1s</option>
-  </select>
-  <h2 class="time"><span id="sec">00</span>s : <span id="ms">99</span>ms</h2>
-  <button id="restart">Restart</button>
+    <div class="positionButton">
+      <button class="testCPS">0</button>
+    </div>
+
+    <div class="options_timer_restart">
+      <div>
+        <label for="optionTime">Options time:</label>
+        <select name="time" id="optionTime">
+          <option value="60">60s</option>
+          <option value="30">30s</option>
+          <option selected value="10">10s</option>
+          <option value="1">1s</option>
+        </select>
+      </div>
+      <h2 class="timer"><span id="sec">00</span>s : <span id="ms">00</span>ms</h2>
+      <button class="restart"><i class="fa-solid fa-rotate-right"></i></button>
+    </div>
+  </div>
+
+  <div class="p_section">
+    <section>
+      <button class="close"><i class="fa-solid fa-xmark"></i></button>
+      <i class="fa-solid fa-face-smile"></i>
+      <h2>Your record is <span id="previousPart"></span> clicks in <span id="valueSec">10</span>sec</h2>
+      <button class="replay">Replay</button>
+    </section>
+  </div>
 
   <script type="module" src="/js/main.js"></script>
 </body>
