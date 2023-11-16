@@ -9,6 +9,7 @@ body {
 }
 
 h1 {
+  font-size: 3rem;
   color: $main-color;
   user-select: text;
   margin: 4rem;
@@ -16,38 +17,8 @@ h1 {
   text-decoration: underline;
 }
 
-.scores {
-  position: relative;
-  margin: 0rem auto;
-  color: $w;
-  width: 30%;
-  height: 10vh;
-  background-color: $main-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 100%;
-    border-left: solid 30px $main-color;
-    border-top: solid 36px transparent;
-    border-bottom: solid 37px transparent;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    right: 100%;
-    border-right: solid 30px $main-color;
-    border-top: solid 36px transparent;
-    border-bottom: solid 37px transparent;
-  }
-}
-
 .positionButton {
-  margin: 3rem 0;
+  margin: 6rem 0 3rem;
   display: flex;
   justify-content: center;
 
@@ -55,7 +26,7 @@ h1 {
     color: $w;
     font-size: 5rem;
     width: 70%;
-    height: 30vh;
+    height: 40vh;
     background-color: $bt;
     border: solid $b;
     border-radius: 1rem;
@@ -98,9 +69,7 @@ h1 {
     }
   }
 
-  .timer {
-    margin-right: 10rem;
-    width: 12.1rem;
+  .timer_clicks {
     font-size: 2rem;
     text-align: center;
   }
@@ -155,18 +124,6 @@ h1 {
       background-color: $main-color;
       padding: 0.8rem 1.8rem;
       border-radius: 0.5rem;
-    }
-
-    .close {
-      position: absolute;
-      top: 0;
-      right: 0.2rem;
-      padding: 1rem;
-      i {
-        font-size: 2.5rem;
-        filter: brightness(0) saturate(100%) invert(7%) sepia(75%)
-          saturate(1287%) hue-rotate(211deg) brightness(97%) contrast(100%);
-      }
     }
   }
 }

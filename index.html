@@ -14,11 +14,6 @@
   <div id="blurring">
     <h1>Test CPS</h1>
 
-    <section class="scores">
-      <h2>🏆 <span id="bestScore"></span></h2>
-    </section>
-
-
     <div class="positionButton">
       <button class="testCPS">0</button>
     </div>
@@ -33,16 +28,16 @@
           <option value="1">1s</option>
         </select>
       </div>
-      <h2 class="timer"><span id="sec">00</span>s : <span id="ms">00</span>ms</h2>
+      <h2 class="timer_clicks"><span id="sec">00</span>s</h2>
+      <h2 class="timer_clicks">Clics/s : <span id="clickSec">0</span></h2>
       <button class="restart"><i class="fa-solid fa-rotate-right"></i></button>
     </div>
   </div>
 
   <div class="p_section">
     <section>
-      <button class="close"><i class="fa-solid fa-xmark"></i></button>
       <i class="fa-solid fa-face-smile"></i>
-      <h2>Your record is <span id="previousPart"></span> clicks in <span id="valueSec">10</span>sec</h2>
+      <h2>Your record is <strong id="previousPart"></strong> clicks in <span id="valueSec">10</span>sec</h2>
       <button class="replay">Replay</button>
     </section>
   </div>
